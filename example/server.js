@@ -5,11 +5,11 @@ var path = require('path');
 
 kserver({
   port: 8181, //默认8080
-  path: path.join(__dirname, './files'),
+  path: path.join(__dirname, './src'),
   routes: {
-    '-render.js': {
+    '/xtpl/': {
       wrap: false,
-      path: path.join(__dirname, './xtpl')
+      path: path.join(__dirname, './build')
     }
   }
 });

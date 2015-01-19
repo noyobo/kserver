@@ -27,8 +27,8 @@ kserver({
   path: path.join(__dirname, './files'),    // required
   port: 8181,                               // 默认: 8080
   mode: 'kissy'                             // 默认: kissy
-  routes: {                                 // 其他规则
-    '-render.js': {                         // 过滤文件
+  routes: {                                 // 路由规则
+    '/xtpl/': {                             // 文件起始
       wrap: false,                          // 是否编译文件
       path: path.join(__dirname, './xtpl')  // 重定义目录
     }
@@ -47,17 +47,17 @@ module.exports = {
 http get > `http://127.0.0.1:8181/index.js` return :
 
 ```
-// kserver file path:C:\E\github\noyobo\kserver\example\files\index.js
+// kserver file path:C:\E\github\noyobo\kserver\example\src\index.js
 KISSY.add(function(S ,require, exports, module) {
   module.exports = {
     'a' : 'hello world'
   };
 });
 ```
-http get > `http://127.0.0.1:8181/index-render.js` return :
+http get > `http://127.0.0.1:8181/xtpl/index-render.js` return :
 
 ```
-// kserver file path:C:\E\github\noyobo\kserver\example\xtpl\index-render.js
+// kserver file path:C:\E\github\noyobo\kserver\example\build\xtpl\index-render.js
 module.exports = {
   'xtpl': 'hello world'
 };

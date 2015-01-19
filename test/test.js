@@ -4,6 +4,7 @@ var server = require('../example/server');
 
 var request = require('supertest')
 
+
 request = request('http://127.0.0.1:8181')
 
 describe('test.js', function() {
@@ -22,9 +23,9 @@ describe('test.js', function() {
       .get('/404.js')
       .expect(404, done);
   });
-  it('should request /index-render.js ok!', function(done) {
+  it('should request /xtpl/index-render.js ok!', function(done) {
     request
-      .get('/index-render.js')
+      .get('/xtpl/index-render.js')
       .expect(200, done);
   });
   it('should request /index-render.js.js 404!', function(done) {

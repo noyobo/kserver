@@ -5,7 +5,8 @@
   "homepage": "https://github.com/noyobo/kserver",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec -t 5000 test/*.js"
+    "test": "mocha -R spec -t 5000 test/*.js",
+    "server": "DEBUG=kserver node ./example/server.js"
   },
   "keywords": [
     "kissy",

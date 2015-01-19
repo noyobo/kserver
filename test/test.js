@@ -11,6 +11,7 @@ describe('test.js', function() {
   it('should request /index.js ok!', function(done) {
     request
       .get('/index.js')
+      .expect(/hello world/)
       .expect(200, done);
   });
   it('should request /index.jss 404!', function(done) {

@@ -16,11 +16,14 @@ module.exports = function(config) {
 process.on('uncaughtException', function(err) {
   if (!server) {
     throw err;
-  }
-  server.send({
+  };
+  server && server.send({
     cmd: 'exit'
   });
-  server.on('exit', function() {
-    throw err;
+});
+
+process.on('exit', function(code) {
+  server && server.send({
+    cmd: 'exit'
   });
 });

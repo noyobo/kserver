@@ -1,0 +1,32 @@
+{
+  "name": "kserver",
+  "version": "1.0.0",
+  "description": "kissy assets server",
+  "homepage": "https://github.com/noyobo/kserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec -t 5000 test/*.js"
+  },
+  "keywords": [
+    "kissy",
+    "server",
+    "proxy"
+  ],
+  "author": "noyobo <noyobo@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:noyobo/kserver.git"
+  },
+  "dependencies": {
+    "copy-to": "^2.0.1",
+    "mime": "^1.2.11"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
+  }
+}

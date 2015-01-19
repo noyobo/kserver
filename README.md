@@ -13,6 +13,11 @@ KISSY 静态资源服务, 便于开发调试. 不需要编译`js`直接运行;
 $ npm install --save-dev kserver
 ```
 
+## options
+
+**mode**: ['kissy', 'define', 'modulex'] // 支持三种形式
+
+
 ## Demo
 
 ```
@@ -31,11 +36,6 @@ kserver({
 });
 
 ```
-
-## options
-
-**mode**: ['kissy', 'define', 'modulex'] // 支持三种形式
-
 index.js source
 
 ```

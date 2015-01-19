@@ -9,7 +9,7 @@ KISSY 静态资源服务, 便于开发调试. 不需要编译`js`直接运行;
 
 ## Install
 
-```
+```bash
 $ npm install --save-dev kserver
 ```
 
@@ -20,7 +20,7 @@ $ npm install --save-dev kserver
 
 ## Demo
 
-```
+```javascript
 var kserver = require('kserver')
 
 kserver({
@@ -38,7 +38,7 @@ kserver({
 ```
 index.js source
 
-```
+```javascript
 module.exports = {
   'a' : 'hello world'
 };
@@ -46,7 +46,7 @@ module.exports = {
 
 http get > `http://127.0.0.1:8181/index.js` return :
 
-```
+```javascript
 // kserver file path:C:\E\github\noyobo\kserver\example\src\index.js
 KISSY.add(function(S ,require, exports, module) {
   module.exports = {
@@ -56,7 +56,7 @@ KISSY.add(function(S ,require, exports, module) {
 ```
 http get > `http://127.0.0.1:8181/xtpl/index-render.js` return :
 
-```
+```javascript
 // kserver file path:C:\E\github\noyobo\kserver\example\build\xtpl\index-render.js
 module.exports = {
   'xtpl': 'hello world'
@@ -64,7 +64,7 @@ module.exports = {
 ```
 ## 应用到项目中
 
-```
+```javascript
 KISSY.config({
     packages: {
         'kserver': {

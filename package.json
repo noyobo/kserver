@@ -1,6 +1,6 @@
 {
   "name": "kserver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "kissy assets server",
   "homepage": "https://github.com/noyobo/kserver",
   "main": "index.js",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "copy-to": "^2.0.1",
+    "debug": "^2.1.1",
     "mime": "^1.2.11"
   },
   "devDependencies": {

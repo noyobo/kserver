@@ -4,7 +4,6 @@ var server = require('../example/server');
 
 var request = require('supertest')
 
-
 request = request('http://127.0.0.1:8181')
 
 describe('test.js', function() {

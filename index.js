@@ -16,11 +16,13 @@ module.exports = function(config) {
 };
 
 process.on('uncaughtException', function(err) {
-  /* jshint -W030 */
-  server && server.send({
-    cmd: 'exit'
-  });
-  throw err;
+  if (err || !server) {
+    throw new Error(err);
+  } else {
+    server.send({
+      cmd: 'exit'
+    });
+  }
 });
 /*jshint unused:false*/
 process.on('exit', function(code) {

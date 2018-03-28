@@ -1,6 +1,8 @@
 kserver
 ========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/noyobo/kserver.svg)](https://greenkeeper.io/)
+
 
 [![npm version](http://img.shields.io/npm/v/kserver.svg)](https://www.npmjs.org/package/kserver) [![npm download](http://img.shields.io/npm/dm/kserver.svg)](https://www.npmjs.org/package/kserver) [![npm engines](http://img.shields.io/node/v/kserver.svg)](https://www.npmjs.org/package/kserver) [![build status](http://img.shields.io/travis/noyobo/kserver.svg)](https://travis-ci.org/noyobo/kserver) [![Coverage Status](https://img.shields.io/coveralls/noyobo/kserver.svg)](https://coveralls.io/r/noyobo/kserver) [![npm dependencise](https://david-dm.org/noyobo/kserver.svg)](https://david-dm.org/noyobo/kserver)
 
